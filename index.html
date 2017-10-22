@@ -29,29 +29,29 @@
 
 
 		.content2{
-			padding-top: 100px;
+			padding-top: 115px;
 			/*height: 760px;*/
 			background: #a9bc1a;
 		}
 		.personInfo{
-			margin-top: 70px;
+			margin-top: 65px;
 		}
 		.personInfo p{
-			text-align: center;
-			font-size: 25px;
+			/*text-align: center;*/
+			font-size: 24px;
+
 			/*background:yellow;*/
 			margin-top: 15px;
 		}
 		
 
 		.content3{
-			padding-top: 30px;
-			padding-bottom:130px;
+			padding-bottom:75px;
 			/*height: 760px;*/
 			background: #bc1a41;
 		}
 		.table-language{
-			border:1px solid #ffffff;
+			border:3px solid #ffffff;
 		}
 		.table-language tr{
 			text-align: center;
@@ -64,7 +64,7 @@
 		}
 		.table-language tr td{
 			font-size: 30px;
-			font-weight: bold;
+			/*font-weight: bold;*/
 			color:#ffffff;
 			width: 300px;
 			padding: 20px 0;
@@ -78,7 +78,7 @@
 
 		.content4{
 			/*height: 760px;*/
-			background: #bc681a;
+			background: #ed6461;
 		}
 
 		.content5{
@@ -92,6 +92,20 @@
 			border-left: none;
 			border-right: none;
 			border-bottom: none;
+		}
+
+		/*图片翻转*/
+		.css-3{
+			-webkit-transition:1s all;
+			-moz-transition:1s all;
+			-o-transition:1s all;
+			transition:1s all;
+		}
+		.css-3:hover{
+			-webkit-transform:rotate(360deg);
+			-moz-transform:rotate(360deg);
+			-o-transform:rotate(360deg);
+			transform:rotate(360deg);
 		}
 	</style>
 </head>
@@ -113,11 +127,11 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#" id="menu-first">主页 <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#" id="menu-second">简介</a></li>
-	        <li><a href="#" id="menu-third">技能</a></li>
-	        <li><a href="#" id="menu-fourth">项目经验</a></li>
-	        <li><a href="#" id="menu-fifth">联系我</a></li>
+	        <li><a href="#" style="font-weight: bold;" id="menu-first">主页 <span class="sr-only">(current)</span></a></li>
+	        <li><a href="#" style="font-weight: bold;" id="menu-second">简介</a></li>
+	        <li><a href="#" style="font-weight: bold;" id="menu-third">技能</a></li>
+	        <li><a href="#" style="font-weight: bold;" id="menu-fourth">项目经验</a></li>
+	        <li><a href="#" style="font-weight: bold;" id="menu-fifth">联系我</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -127,7 +141,7 @@
 	<div class="container-fluid content1">
 		<div class="row content1Row">
 			<div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4  firstPage">
-				<h1>Hello,World</h1>
+				<h1 class="pageonetxt">Hello,World</h1>
 			</div>
 		</div>
 		<div class="row content1Row2">
@@ -140,32 +154,37 @@
 	<div class="container-fluid content2">
 		<div class="row content2Row">
 			<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 50px;">
-				<img style="border-radius: 50%;" src="images/1.jpg" alt="头像">
+				<img style="border-radius:50%;width: 200px;height: 200px;border:4px solid #ffffff;" src="images/1.jpg" alt="头像">
 				<div class="personInfo">
-					<p>姓名 | xxx </p>
+					<p>姓名 | 任钰轩 </p>
 					<p>年龄 | 23</p>
 					<p>所在地 | 山西 晋中</p>
-					<p>手机 | 171245983158</p>
+					<p>手机 | 17835422836</p>
 					<p>邮箱 | sxauyx@163.com</p>
-					<p>github | 点击进入</p>
-					<p>Blog | 点击进入</p>
+					<!-- <p>github | <a href="https://github.com/Nevermarrywife" style="color: #383a31;font-size: 22px;">点击进入</a></p>
+					<p>Blog | <a href="http://blog.csdn.net/yx_brilliant?viewmode=list" style="color: #383a31;font-size: 22px;">点击进入</a></p> -->
+					<p>学历 | 本科大四在读</p>
+					<p>求职方向 | web前端工程师</p>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6" style="text-align: center;">
 				<div class="row" >
-					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 130px;">
-						<img src="images/github.png" alt="">
+					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 90px;">
+						<a href="https://github.com/Nevermarrywife"><img class="css-3" src="images/github.png" alt="" /></a>
 						<p style="font-size: 25px;font-weight: bold;margin-top: 10px;" href="#">Github</p>
 					</div>
-					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 130px;">
-						<img src="images/blog.png" alt="">
+					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 90px;">
+						<a href="http://blog.csdn.net/yx_brilliant?viewmode=list"><img class="css-3" src="images/blog.png" alt=""></a>
 						<p style="font-size: 25px;font-weight: bold;margin-top: 10px;" href="#">Blog</p>
 					</div>
 				</div>
-				<div style="font-size: 25px;font-weight: bold;">
-					<p style="margin-top: 30px;">习近平同志主持会议。大会秘书长刘云山就十九届中央委员会委员、候补委员和中央纪律检查委员会委员候选人预备人选建议名单作了说明。</p>
-					<p style="margin-top: 30px;">会议通过了十九届中央委员会委员、候补委员和中央纪律检查委员会委员候选人预备人选建议名单，提交各代表团酝酿。</p>
-					<p style="margin-top: 30px;">会议通过了经各代表团酝酿的大会选举办法。会议还通过了监票人、总监票人名单，待正式选举时提请大会通过。</p>
+				<div style="font-size: 20px;font-weight: bold;text-align: left;margin-left: 40px;">
+					<p style="margin-top: 80px;">我是一个性格活泼开朗的人。</p>
+					<p style="margin-top: 10px;">我喜欢挑战各种技术，并且不会轻言放弃。</p>
+					<p style="margin-top: 10px;">我喜欢计算机，热爱我所做的一切。</p>
+					<p style="margin-top: 50px;">半年前端开发经验，熟悉使用HTML、CSS、javascript;</p>
+					<p style="margin-top: 10px;">有良好的编程习惯，能开发符合W3C标准的页面，熟练使用jQuery,Bootstrap等框架。</p>
+					<p style="margin-top: 10px;">熟悉PHP和MySQL,理解基本算法分析和数据结构，以及面向对象的设计概念。</p>
 				</div>				
 			</div>
 		</div>
@@ -175,7 +194,7 @@
 		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 60px;">
 			<p>学习技能</p>
 		</div>
-		<div class="row" style="margin-top: 50px;">
+		<div class="row" style="padding-top: 80px;">
 				<div class="col-lg-3 col-md-3">
 					<table class="table-language" style="margin:auto;" >
 					  <tr>
@@ -202,22 +221,19 @@
 				<div class="col-lg-3 col-md-3">
 					<table class="table-language" style="margin:auto;">
 					  <tr>
-					    <th>语言</th>
+					    <th>思想</th>
 					  </tr>
 					  <tr>
-					    <td>JavaScript</td>
+					    <td>W3C标准</td>
 					  </tr>
 					  <tr>
-					    <td>MySQL</td>
+					    <td>响应式设计</td>
 					  </tr>
 					  <tr>
-					    <td>JQuery</td>
+					    <td>语义化</td>
 					  </tr>
 					  <tr>
-					    <td>HTML(5)</td>
-					  </tr>
-					  <tr>
-					    <td>CSS(3)</td>
+					    <td>表现与结构分离</td>
 					  </tr>
 					</table>
 				</div>
@@ -225,22 +241,13 @@
 				<div class="col-lg-3 col-md-3">
 					<table class="table-language" style="margin:auto;">
 					  <tr>
-					    <th>语言</th>
+					    <th>框架</th>
 					  </tr>
 					  <tr>
-					    <td>JavaScript</td>
+					    <td>BootStrap</td>
 					  </tr>
 					  <tr>
-					    <td>MySQL</td>
-					  </tr>
-					  <tr>
-					    <td>JQuery</td>
-					  </tr>
-					  <tr>
-					    <td>HTML(5)</td>
-					  </tr>
-					  <tr>
-					    <td>CSS(3)</td>
+					    <td>jQuery</td>
 					  </tr>
 					</table>
 				</div>
@@ -248,22 +255,22 @@
 				<div class="col-lg-3 col-md-3">
 					<table class="table-language" style="margin:auto;">
 					  <tr>
-					    <th>语言</th>
+					    <th>技术</th>
 					  </tr>
 					  <tr>
-					    <td>JavaScript</td>
+					    <td>Ajax</td>
 					  </tr>
 					  <tr>
-					    <td>MySQL</td>
+					    <td>Git</td>
 					  </tr>
 					  <tr>
-					    <td>JQuery</td>
+					    <td>Apache</td>
 					  </tr>
 					  <tr>
-					    <td>HTML(5)</td>
+					    <td>PS/DW/Office</td>
 					  </tr>
 					  <tr>
-					    <td>CSS(3)</td>
+					    <td>AutoCAD</td>
 					  </tr>
 					</table>
 				</div>
@@ -279,19 +286,21 @@
 
 		<div class="row" style="padding: 158px;">
 			<div class="col-lg-4 col-md-4  col-sm-8 col-xs-8" style="text-align: center;">
-				<img style="width: 150px;height: 150px;border-radius: 50%;" src="images/1.jpg" alt="">
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;background: red;" href="#">微信小程序</p>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;background: blue;" href="#">使用公共api查询所有电影和书籍的详情以及评分</p>
-			</div>
-			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-8" style="text-align: center;">
-				<img style="width: 150px;height: 150px;border-radius: 50%;" src="images/1.jpg" alt="">
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">Github</p>
+				<img class="css-3" style="width: 200px;height: 200px;border-radius: 50%;border:3px solid #ffffff;" src="images/smallicon.png" alt="">
+				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">微信小程序</p>
 				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">使用公共api查询所有电影和书籍的详情以及评分</p>
 			</div>
 			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-8" style="text-align: center;">
-				<img style="width: 150px;height: 150px;border-radius: 50%;" src="images/1.jpg" alt="">
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">Github</p>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">使用公共api查询所有电影和书籍的详情以及评分</p>
+				<div>
+					<canvas id="clock" height="200px" width="200px"></canvas>
+				</div>
+				<p style="font-size: 25px;font-weight: bold;margin-top: 5px;padding-top: 20px;" href="#">学习时间到</p>
+				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">此页面是响应式页面哦</p>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-8 col-xs-8" style="text-align: center;">
+				<a href="http://mini.oeeee.top/"><img class="css-3" style="width: 200px;height: 200px;border-radius: 50%;border:3px solid #ffffff;" src="images/iconband.png" alt=""></a>
+				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">Band-web</p>
+				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">一个可爱的乐队网站</p>
 			</div>
 		</div>
 	</div>
@@ -299,7 +308,7 @@
 	<!-- 页面五 -->
 	<div class="container-fluid content5">
 		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 360px;padding-bottom: 360px;">
-			<p>联系我吧：sxauyx@163.com</p>
+			<p>收了我吧：sxauyx@163.com</p>
 		</div>
 			<footer>
 				<hr style="margin:10px auto;border:none;border-top:1px solid #3288b8" />
@@ -309,36 +318,45 @@
 				</div>        
 		    </footer>
 	</div>
+
+	
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.js"></script>
+<script src="js/canvas.js"></script>
 <script>
 	$(document).ready(function(){
 		$('#menu-first').click(function(){
+			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content1').offset().top
 			},1000)
 		});
 		$('#menu-second').click(function(){
+			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content2').offset().top
 			},1000)
 		});
 		$('#icon-next').click(function(){
+			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content2').offset().top
 			},1000)
 		});
 		$('#menu-third').click(function(){
+			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content3').offset().top
 			},1000)
 		});
 		$('#menu-fourth').click(function(){
+			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content4').offset().top
 			},1000)
 		});
 		$('#menu-fifth').click(function(){
+			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content5').offset().top
 			},1000)
