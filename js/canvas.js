@@ -44,10 +44,10 @@ function drawBackground(){
 		if(i%5==0){
 			//填充的颜色
 			ctx.fillStyle = '#000';
-			ctx.arc(x,y,2,0,2*Math.PI,false)
+			ctx.arc(x,y,1,0,2*Math.PI,false)
 		}else{
-			ctx.fillStyle = '#000000';
-			ctx.arc(x,y,2,0,2*Math.PI,false)
+			ctx.fillStyle = '#383a31';
+			ctx.arc(x,y,1,0,2*Math.PI,false)
 		}
 		//填充定义的路径
 		ctx.fill()
