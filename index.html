@@ -9,7 +9,8 @@
 	<style>
 		.content1{
 			/*height: 760px;*/
-			padding-top: 80px;
+			padding-top: 35px;
+			padding-bottom: 30px;
 			background: #1abc9c;
 		}
 		.content1Row{
@@ -31,6 +32,7 @@
 
 		.content2{
 			padding-top: 115px;
+			padding-bottom: 40px;
 			/*height: 760px;*/
 			background: #a9bc1a;
 		}
@@ -47,7 +49,7 @@
 		
 
 		.content3{
-			padding-bottom:75px;
+			padding-bottom:120px;
 			/*height: 760px;*/
 			background: #bc1a41;
 		}
@@ -59,12 +61,13 @@
 			background: #bc1a41;
 		}
 		.table-language th{
+			font-size: 20px;
 			padding: 20px 0;
 			text-align: center;
 			background: #ffffff;
 		}
 		.table-language tr td{
-			font-size: 30px;
+			font-size: 20px;
 			/*font-weight: bold;*/
 			color:#ffffff;
 			width: 300px;
@@ -88,7 +91,8 @@
 		}
 
 		.navbarlist{
-			background: #42474b;
+			opacity: 0.9;
+/*			background: #166259;*/
 			border:1px solid #ccc;
 			border-left: none;
 			border-right: none;
@@ -109,11 +113,13 @@
 			-o-transform:rotate(360deg);
 			transform:rotate(360deg);
 		}
+
+		/*导航栏*/
 	</style>
 </head>
 <body>
 	<!-- 导航条 -->
-	<nav class="navbar navbar-default navbar-fixed-top navbarlist">
+	<nav class="navbar navbar-inverse navbar-fixed-top navbarlist">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -128,12 +134,12 @@
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#" style="font-weight: bold;" id="menu-first">主页 <span class="sr-only">(current)</span></a></li>
-	        <li><a href="#" style="font-weight: bold;" id="menu-second">简介</a></li>
-	        <li><a href="#" style="font-weight: bold;" id="menu-third">技能</a></li>
-	        <li><a href="#" style="font-weight: bold;" id="menu-fourth">项目经验</a></li>
-	        <li><a href="#" style="font-weight: bold;" id="menu-fifth">联系我</a></li>
+	      <ul class="nav navbar-nav navbar-right mynavbar">
+	        <li class="active" id="menu-first"><a href="#"  style="font-weight: bold;" >主页 <span class="sr-only">(current)</span></a></li>
+	        <li id="menu-second"><a href="#" style="font-weight: bold;" >简介</a></li>
+	        <li id="menu-third"><a href="#" style="font-weight: bold;" >技能</a></li>
+	        <li id="menu-fourth"><a href="#" style="font-weight: bold;" >项目经验</a></li>
+	        <li id="menu-fifth"><a href="#" style="font-weight: bold;" >联系我</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -155,7 +161,7 @@
 	<!-- 页面二 -->
 	<div class="container-fluid content2">
 		<div class="row content2Row">
-			<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 50px;">
+			<div class="col-lg-6 col-md-6" style="text-align: center;padding-bottom: 45px;">
 				<img style="border-radius:50%;width: 200px;height: 200px;border:4px solid #ffffff;" src="images/1.jpg" alt="头像">
 				<div class="personInfo">
 					<p>姓名 | 任钰轩 </p>
@@ -169,13 +175,13 @@
 					<p>实习时期 | 6个月以上</p>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6" style="text-align: center;">
+			<div class="col-lg-6 col-md-6" style="text-align: center;padding-bottom: 45px;">
 				<div class="row" >
-					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 90px;">
+					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 30px">
 						<a href="https://github.com/Nevermarrywife"><img class="css-3" src="images/github.png" alt="" /></a>
 						<p style="font-size: 25px;font-weight: bold;margin-top: 10px;" href="#">Github</p>
 					</div>
-					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 90px;">
+					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 30px">
 						<a href="http://blog.csdn.net/yx_brilliant?viewmode=list"><img class="css-3" src="images/blog.png" alt=""></a>
 						<p style="font-size: 25px;font-weight: bold;margin-top: 10px;" href="#">Blog</p>
 					</div>
@@ -193,8 +199,8 @@
 	</div>
 	<!-- 页面三 -->
 	<div class="container-fluid content3">
-		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 60px;">
-			<p>学习技能</p>
+		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 90px;">
+			<p>掌握技能</p>
 		</div>
 		<div class="row" style="padding-top: 80px;">
 				<div class="col-lg-3 col-md-3">
@@ -281,7 +287,7 @@
 
 	<!-- 页面四 -->
 	<div class="container-fluid content4">
-		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 60px;">
+		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 120px;">
 			<p>项目经验</p>
 		</div>
 		<div class="row" style="padding-top: 130px;padding-bottom: 130px;">
@@ -307,7 +313,7 @@
 
 	<!-- 页面五 -->
 	<div class="container-fluid content5">
-		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 360px;padding-bottom: 360px;">
+		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 245px;padding-bottom: 360px;">
 			<p>快把我放进碗里吧：sxauyx@163.com</p>
 		</div>
 		<footer>
@@ -326,12 +332,16 @@
 <script>
 	$(document).ready(function(){
 		$('#menu-first').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content1').offset().top
 			},1000)
 		});
 		$('#menu-second').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content2').offset().top
@@ -344,18 +354,24 @@
 			},1000)
 		});
 		$('#menu-third').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content3').offset().top
 			},1000)
 		});
 		$('#menu-fourth').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content4').offset().top
 			},1000)
 		});
 		$('#menu-fifth').click(function(){
+			$(this).siblings().removeClass('active');
+			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content5').offset().top
