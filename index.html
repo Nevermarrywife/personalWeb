@@ -93,13 +93,21 @@
 		}
 
 		.navbarlist{
-			opacity: 0.9;
-/*			background: #166259;*/
-			border:1px solid #ccc;
+			/*opacity: 0.9;*/
+			background: #166259;
 			border-left: none;
 			border-right: none;
 			border-top: none;
 			border-bottom: none;
+		}
+		.navbar-brand{
+			color:#383a31 !important;
+		}
+		.mynavbar li a{
+			color:#fff !important;
+		}	
+		.mynavbar li:hover{
+			background:#383a31;
 		}
 
 		/*图片翻转*/
@@ -121,7 +129,7 @@
 </head>
 <body>
 	<!-- 导航条 -->
-	<nav class="navbar navbar-inverse navbar-fixed-top navbarlist">
+	<nav class="navbar navbar-default navbar-fixed-top navbarlist">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
@@ -137,11 +145,11 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right mynavbar">
-	        <li class="active" id="menu-first"><a href="#"  style="font-weight: bold;" >主页 <span class="sr-only">(current)</span></a></li>
-	        <li id="menu-second"><a href="#" style="font-weight: bold;" >简介</a></li>
-	        <li id="menu-third"><a href="#" style="font-weight: bold;" >技能</a></li>
-	        <li id="menu-fourth"><a href="#" style="font-weight: bold;" >项目经验</a></li>
-	        <li id="menu-fifth"><a href="#" style="font-weight: bold;" >联系我</a></li>
+	        <li id="menu-first"><a href="#"  style="font-weight: bold;margin:0 15px;" >主页 <span class="sr-only">(current)</span></a></li>
+	        <li id="menu-second"><a href="#" style="font-weight: bold;margin:0 15px;" >简介</a></li>
+	        <li id="menu-third"><a href="#" style="font-weight: bold;margin:0 15px;" >技能</a></li>
+	        <li id="menu-fourth"><a href="#" style="font-weight: bold;margin:0 15px;" >项目经验</a></li>
+	        <li id="menu-fifth"><a href="#" style="font-weight: bold;margin:0 15px;" >联系我</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -334,46 +342,35 @@
 <script>
 	$(document).ready(function(){
 		$('#menu-first').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content1').offset().top
 			},1000)
 		});
 		$('#menu-second').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content2').offset().top
 			},1000)
 		});
 		$('#icon-next').click(function(){
-			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content2').offset().top
 			},1000)
 		});
 		$('#menu-third').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content3').offset().top
 			},1000)
 		});
 		$('#menu-fourth').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content4').offset().top
 			},1000)
 		});
 		$('#menu-fifth').click(function(){
-			$(this).siblings().removeClass('active');
-			$(this).addClass('active');
 			$('html,body').stop();
 			$('html,body').animate({
 				scrollTop:$('.content5').offset().top
