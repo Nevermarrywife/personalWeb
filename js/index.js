@@ -34,5 +34,10 @@ $(document).ready(function(){
 				scrollTop:$('.content5').offset().top
 			},1000)
 		});
-		console.log("")
+			var a = "\
+		\n               #   ___          _   _                      |          \
+		\n    ,,,,,      #  <_*_>        '\\\\-//`        ()_()        |.===.     \
+		\n   /(o o)\\     #  (o o)         (o o)         (o o)        {}o o{}    \
+		\nooO--(_)--Ooo--8---(_)--Ooo-ooO--(_)--Ooo-ooO--`o'--Ooo-ooO--(_)--Ooo-contact-me";
+			console.info(a);
 	})
