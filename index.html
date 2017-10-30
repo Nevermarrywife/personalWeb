@@ -6,126 +6,7 @@
 	<link rel="shortcut icon" href="bitbug_favicon.ico" type="image/x-icon" />
 	<title>任钰轩的简介</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<style>
-		.content1{
-			/*height: 760px;*/
-			padding-top: 80px;
-			padding-bottom: 80px;
-			background: #1abc9c;
-		}
-		.content1Row{
-			padding-top: 180px;
-			padding-bottom: 200px;
-		}
-		.content1Row2 img{
-			height: 130px;
-			width: 130px;
-		}
-		.firstPage{
-			text-align: center;
-		}
-		.firstPage h1{
-			font-size: 60px;
-			color:#fff;
-		}
-
-
-
-		.content2{
-			padding-top: 90px;
-			padding-bottom: 60px;
-			/*height: 760px;*/
-			background: #a9bc1a;
-		}
-		.personInfo{
-			margin-top: 65px;
-		}
-		.personInfo p{
-			/*text-align: center;*/
-			font-size: 24px;
-
-			/*background:yellow;*/
-			margin-top: 15px;
-		}
-		
-
-		.content3{
-			padding-top: 30px;
-			padding-bottom:100px;
-			/*height: 760px;*/
-			background: #bc1a41;
-		}
-		.table-language{
-			border:3px solid #ffffff;
-		}
-		.table-language tr{
-			text-align: center;
-			background: #bc1a41;
-		}
-		.table-language th{
-			font-size: 20px;
-			padding: 20px 0;
-			text-align: center;
-			background: #ffffff;
-		}
-		.table-language tr td{
-			font-size: 20px;
-			/*font-weight: bold;*/
-			color:#ffffff;
-			width: 300px;
-			padding: 20px 0;
-
-		}
-		.table-language tr td:hover{
-			background: #ffffff;
-			color:black;
-		}
-
-
-		.content4{
-			/*height: 760px;*/
-			background: #ed6461;
-		}
-
-		.content5{
-			/*height: 760px;*/
-			background: #24d2da;
-		}
-
-		.navbarlist{
-			/*opacity: 0.9;*/
-			background: #166259;
-			border-left: none;
-			border-right: none;
-			border-top: none;
-			border-bottom: none;
-		}
-		.navbar-brand{
-			color:#383a31 !important;
-		}
-		.mynavbar li a{
-			color:#fff !important;
-		}	
-		.mynavbar li:hover{
-			background:#383a31;
-		}
-
-		/*图片翻转*/
-		.css-3{
-			-webkit-transition:1s all;
-			-moz-transition:1s all;
-			-o-transition:1s all;
-			transition:1s all;
-		}
-		.css-3:hover{
-			-webkit-transform:rotate(360deg);
-			-moz-transform:rotate(360deg);
-			-o-transform:rotate(360deg);
-			transform:rotate(360deg);
-		}
-
-		/*导航栏*/
-	</style>
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 	<!-- 导航条 -->
@@ -145,11 +26,11 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right mynavbar">
-	        <li id="menu-first"><a href="#"  style="font-weight: bold;margin:0 15px;" >主页 <span class="sr-only">(current)</span></a></li>
-	        <li id="menu-second"><a href="#" style="font-weight: bold;margin:0 15px;" >简介</a></li>
-	        <li id="menu-third"><a href="#" style="font-weight: bold;margin:0 15px;" >技能</a></li>
-	        <li id="menu-fourth"><a href="#" style="font-weight: bold;margin:0 15px;" >项目经验</a></li>
-	        <li id="menu-fifth"><a href="#" style="font-weight: bold;margin:0 15px;" >联系我</a></li>
+	        <li id="menu-first"><a href="#" >主页 <span class="sr-only">(current)</span></a></li>
+	        <li id="menu-second"><a href="#" >简介</a></li>
+	        <li id="menu-third"><a href="#" >技能</a></li>
+	        <li id="menu-fourth"><a href="#" >项目经验</a></li>
+	        <li id="menu-fifth"><a href="#" >联系我</a></li>
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
@@ -157,22 +38,23 @@
 
 	<!-- 页面一 -->
 	<div class="container-fluid content1">
-		<div class="row content1Row">
+		<div class="row content1-title">
 			<div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4  firstPage">
 				<h1 class="pageonetxt">Hello,World</h1>
 			</div>
 		</div>
-		<div class="row content1Row2">
+		<div class="row content1-img">
 			<div class="col-lg-4 col-md-4 col-lg-offset-4 col-md-offset-4 firstPage">
 				<img id="icon-next" src="images/icon1.png" alt="">
 			</div>
 		</div>
 	</div>
+
 	<!-- 页面二 -->
 	<div class="container-fluid content2">
 		<div class="row content2Row">
-			<div class="col-lg-6 col-md-6" style="text-align: center;padding-bottom: 45px;">
-				<img style="border-radius:50%;width: 200px;height: 200px;border:4px solid #ffffff;" src="images/1.jpg" alt="头像">
+			<div class="col-lg-6 col-md-6" id="content2-left">
+				<img src="images/1.jpg" alt="头像">
 				<div class="personInfo">
 					<p>姓名 | 任钰轩 </p>
 					<p>年龄 | 23</p>
@@ -185,36 +67,37 @@
 					<p>实习时期 | 6个月以上</p>
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6" style="text-align: center;padding-bottom: 45px;">
-				<div class="row" >
-					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 30px">
+			<div class="col-lg-6 col-md-6" id="content2-right">
+				<div class="row" id="content2-right-row">
+					<div class="col-lg-6 col-md-6">
 						<a href="https://github.com/Nevermarrywife"><img class="css-3" src="images/github.png" alt="" /></a>
-						<p style="font-size: 25px;font-weight: bold;margin-top: 10px;" href="#">Github</p>
+						<p href="#">Github</p>
 					</div>
-					<div class="col-lg-6 col-md-6" style="text-align: center;padding-top: 30px">
+					<div class="col-lg-6 col-md-6">
 						<a href="http://blog.csdn.net/yx_brilliant?viewmode=list"><img class="css-3" src="images/blog.png" alt=""></a>
-						<p style="font-size: 25px;font-weight: bold;margin-top: 10px;" href="#">Blog</p>
+						<p href="#">Blog</p>
 					</div>
 				</div>
-				<div style="font-size: 20px;font-weight: bold;text-align: left;margin-left: 40px;">
-					<p style="margin-top: 80px;">我是一个性格活泼开朗的人。</p>
-					<p style="margin-top: 10px;">我喜欢挑战各种技术，并且不会轻言放弃。</p>
-					<p style="margin-top: 10px;">我喜欢计算机，热爱我所做的一切。</p>
-					<p style="margin-top: 50px;">半年前端开发经验，熟悉使用HTML、CSS、javascript;</p>
-					<p style="margin-top: 10px;">有良好的编程习惯，能开发符合W3C标准的页面，熟练使用jQuery,Bootstrap等框架。</p>
-					<p style="margin-top: 10px;">熟悉PHP和MySQL,理解基本算法分析和数据结构，以及面向对象的设计概念。</p>
+				<div id="content2-right-ifo">
+					<p>我是一个性格活泼开朗的人。</p>
+					<p>我喜欢挑战各种技术，并且不会轻言放弃。</p>
+					<p>我喜欢计算机，热爱我所做的一切。</p>
+					<p class="pag">半年前端开发经验，熟悉使用HTML、CSS、javascript;</p>
+					<p>有良好的编程习惯，能开发符合W3C标准的页面，熟练使用jQuery,Bootstrap等框架。</p>
+					<p>熟悉PHP和MySQL,理解基本算法分析和数据结构，以及面向对象的设计概念。</p>
 				</div>				
 			</div>
 		</div>
 	</div>
+
 	<!-- 页面三 -->
 	<div class="container-fluid content3">
-		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 90px;">
+		<div class="row" id="content3-title">
 			<p>掌握技能</p>
 		</div>
-		<div class="row" style="padding-top: 130px;">
+		<div class="row" id="content3-list">
 				<div class="col-lg-3 col-md-3">
-					<table class="table-language" style="margin:auto;" >
+					<table class="table-language" >
 					  <tr>
 					    <th>语言</th>
 					  </tr>
@@ -237,7 +120,7 @@
 				</div>
 
 				<div class="col-lg-3 col-md-3">
-					<table class="table-language" style="margin:auto;">
+					<table class="table-language">
 					  <tr>
 					    <th>思想</th>
 					  </tr>
@@ -257,7 +140,7 @@
 				</div>
 
 				<div class="col-lg-3 col-md-3">
-					<table class="table-language" style="margin:auto;">
+					<table class="table-language">
 					  <tr>
 					    <th>框架</th>
 					  </tr>
@@ -271,7 +154,7 @@
 				</div>
 
 				<div class="col-lg-3 col-md-3">
-					<table class="table-language" style="margin:auto;">
+					<table class="table-language">
 					  <tr>
 					    <th>技术</th>
 					  </tr>
@@ -291,86 +174,47 @@
 
 	<!-- 页面四 -->
 	<div class="container-fluid content4">
-		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 90px;">
+		<div class="row" id="content4-title">
 			<p>项目经验</p>
 		</div>
-		<div class="row" style="padding-top: 130px;padding-bottom: 130px;">
-			<div class="col-lg-4 col-md-4  col-sm-12 col-xs-12" style="text-align: center;">
-				<img class="css-3" style="width: 200px;height: 200px;border-radius: 50%;border:3px solid #ffffff;margin:auto;" src="images/smallicon.png" alt="">
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">微信小程序</p>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">查询书籍的详细资料和评分</p>
+		<div class="row" id="content4-list">
+			<div class="col-lg-4 col-md-4  col-sm-12 col-xs-12" id="content4-list-1">
+				<img class="css-3" src="images/smallicon.png" alt="">
+				<p href="#">微信小程序</p>
+				<p href="#">查询书籍的详细资料和评分</p>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="content4-list-2">
 				<div>
 					<canvas id="clock" height="200px" width="200px"></canvas>
 				</div>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 5px;padding-top: 20px;" href="#">学习时间到</p>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">此页面是响应式布局结构哦</p>
+				<p href="#">学习时间到</p>
+				<p href="#">此页面是响应式布局结构哦</p>
 			</div>
-			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="text-align: center;">
-				<a href="http://mini.oeeee.top/"><img class="css-3" style="width: 200px;height: 200px;border-radius: 50%;border:3px solid #ffffff;" src="images/iconband.png" alt=""></a>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">Band-web</p>
-				<p style="font-size: 25px;font-weight: bold;margin-top: 10px;padding-top: 20px;" href="#">一个可爱的乐队网站</p>
+			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" id="content4-list-3">
+				<a href="http://mini.oeeee.top/"><img class="css-3" src="images/iconband.png" alt=""></a>
+				<p href="#">Band-web</p>
+				<p href="#">一个可爱的乐队网站</p>
 			</div>
 		</div>
 	</div>
 
 	<!-- 页面五 -->
 	<div class="container-fluid content5">
-		<div class="row" style="text-align: center;font-size: 40px;font-weight: bold;padding-top: 245px;padding-bottom: 360px;">
+		<div class="row" id="content5-title">
 			<p>快把我放进碗里吧：sxauyx@163.com</p>
 		</div>
-		<footer>
-			<hr style="margin:10px auto;border:none;border-top:1px solid #3288b8" />
+		<footer id="content5-footer">
+			<hr/>
 			<div class="col-md-12 col-sm-12">
-				<span class="pull-left" style="color:#3288b8;">&copy; nevermarrywife</span>
-		        <span class="pull-right" style="color:#3288b8;">2017-10</span>
+				<span class="pull-left">&copy; nevermarrywife</span>
+		        <span class="pull-right">2017-10</span>
 			</div>        
 	    </footer>
 	</div>
 
-	
 <script src="js/jquery-3.2.1.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/canvas.js"></script>
-<script>
-	$(document).ready(function(){
-		$('#menu-first').click(function(){
-			$('html,body').stop();
-			$('html,body').animate({
-				scrollTop:$('.content1').offset().top
-			},1000)
-		});
-		$('#menu-second').click(function(){
-			$('html,body').stop();
-			$('html,body').animate({
-				scrollTop:$('.content2').offset().top
-			},1000)
-		});
-		$('#icon-next').click(function(){
-			$('html,body').animate({
-				scrollTop:$('.content2').offset().top
-			},1000)
-		});
-		$('#menu-third').click(function(){
-			$('html,body').stop();
-			$('html,body').animate({
-				scrollTop:$('.content3').offset().top
-			},1000)
-		});
-		$('#menu-fourth').click(function(){
-			$('html,body').stop();
-			$('html,body').animate({
-				scrollTop:$('.content4').offset().top
-			},1000)
-		});
-		$('#menu-fifth').click(function(){
-			$('html,body').stop();
-			$('html,body').animate({
-				scrollTop:$('.content5').offset().top
-			},1000)
-		});
-	})
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

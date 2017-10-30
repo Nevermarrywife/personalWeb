@@ -4,7 +4,6 @@ var ctx = dom.getContext('2d');
 var width = ctx.canvas.width;
 var height = ctx.canvas.height;
 var r = width/2;
-console.log(width,height,r);
 
 function drawBackground(){
 	//保存最开始的环境，这会原点还在左上角。
