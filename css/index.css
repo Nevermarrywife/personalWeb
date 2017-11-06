@@ -82,16 +82,16 @@
 	font-weight: bold;
 	margin-top: 10px;
 }
-#content2-right-row img{
-	width: 81px;
-	height: 81px;
-}
 #content2-right-ifo{
 	font-size: 20px;
 	font-weight: bold;
 	text-align: left;
 	margin-left: 40px;
 	margin-top: 80px;
+}
+#content2-right-row img{
+	width: 81px;
+	height: 81px;
 }
 #content2-right-ifo p{
 	margin-top: 10px;
